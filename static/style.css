@@ -1,0 +1,555 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+    /* align-items: center; */
+    /* height: 2000px; */
+}
+/* Header starts */
+
+/* navigation bar */
+header #navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    padding: 2px 16px;
+    height: 66px;
+    position: sticky;
+}
+#navbar .bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header #navbar #bar1 img{
+    width: 50px;
+}
+#navbar #bar2{
+    width: 430px;
+}
+#navbar #bar2 a{
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    /* font-weight: bold; */
+    font-family: 'Ubuntu', sans-serif;
+}
+#navbar #bar2 a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+#navbar #bar3{
+    width: 90px;
+}
+header #navbar #bar3 img{
+    width: 30px;
+}
+#navbar #bar3 a img:hover{
+    background-color: white;
+    border-radius: 80px;
+}
+
+/* id menubar */
+header #menubar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 20px;
+    background-color: black;
+}
+#menubar #bar1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menubar #bar1 a{
+    color: rgb(202, 194, 194);
+    text-decoration: none;
+    padding: 2px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+}
+#menubar #bar1 a:hover{
+    color: white;
+}
+#menubar #bar2{
+    width: 300px;
+}
+#menubar #bar2 input[placeholder]{
+    width: 240px;
+}
+#menubar #bar2 input[value]:hover{
+    border: 2px solid green;
+    border-radius: 2px;
+    background-color: green;
+    color: white;
+}
+/* Header ends */
+
+/* Section strts */
+section{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px; */
+}
+section .box{
+    margin-top: 10px;
+}
+/* explore */
+section #explore{
+    background: url("../images/indian-flag.jpg") no-repeat center center/cover;
+    /* border: 2px solid blue; */
+    width: 90%;
+    height: 46vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#explore #item1{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#explore #item1{
+    height: 121px;
+}
+#explore #item1 h1{
+    color: orangered;
+    text-shadow: 2px 2px orange;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+}
+#explore #item1 h2{
+    color: whitesmoke;
+    text-shadow: 2px 2px grey;
+    font-family: 'Ubuntu', sans-serif;
+}
+#explore #item1 span{
+    color: green;
+    font-weight: bold;
+    text-shadow: 2px 2px greenyellow;
+    font-family: 'Ubuntu', sans-serif;
+}
+#explore #item2{
+    display: grid;
+    background-color: aquamarine;
+    grid-template-columns: 100px 100px;
+    width: 300px;
+    height: 50px;
+    /* grid-column-gap: 10px; */
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+#explore #item2 img{
+    width: 120px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+#explore #item2 h2{
+    font-size: 13px;
+    width: 120px;
+    color: green;
+}
+#explore #item2 span{
+    font-size: 8px;
+    width: 120px;
+    font-weight: bold;
+    color: green;
+}
+#explore #item3 button{
+    border: grey;
+}
+/* top deals */
+section #topdeals{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    /* height: 200px; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dbdbdb;
+    border: 2px solid #dbdbdb;
+    padding: 14px 0px;
+}
+#topdeals #box1{
+    display: flex;
+    width: 96%;
+    margin-bottom: 14px;
+    align-items: center;
+}
+#topdeals #box1 h1{
+    font-family: 'DynaPuff', cursive;
+    text-shadow: 2px 2px grey;
+    font-size: 30px;
+    margin-right: 10px;
+}
+#topdeals #box1 a{
+    text-decoration: none;
+    color: blue;
+}
+#topdeals #box1 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+#topdeals #box2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+}
+#topdeals #box2 .items{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 240px;
+    align-items: center;
+}
+#topdeals #box2 .items a{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 40px;
+}
+#topdeals #box2 .items img{
+    width: 180px;
+    /* padding: 5px; */
+}
+#topdeals #box2 .items img:hover{
+    transform: translateY(-7px);
+    transition-duration: 1.5s;
+    /* cursor: pointer; */
+}
+#topdeals #box2 .items span{
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+}
+
+/* Prime deals */
+section #primedeals{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    /* height: 200px; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dbdbdb;
+    border: 2px solid #dbdbdb;
+    padding: 14px 0px;
+}
+#primedeals #box1{
+    display: flex;
+    width: 96%;
+    margin-bottom: 14px;
+    align-items: center;
+}
+#primedeals #box1 h1{
+    font-family: 'DynaPuff', cursive;
+    text-shadow: 2px 2px grey;
+    font-size: 30px;
+    margin-right: 10px;
+}
+#primedeals #box1 a{
+    text-decoration: none;
+    color: blue;
+}
+#primedeals #box1 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+#primedeals #box2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+}
+#primedeals #box2 .items{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 240px;
+    align-items: center;
+}
+#primedeals #box2 .items a{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 40px;
+}
+#primedeals #box2 .items img{
+    width: 180px;
+    /* padding: 5px; */
+}
+#primedeals #box2 .items img:hover{
+    transform: translateY(-7px);
+    transition-duration: 1.5s;
+    /* cursor: pointer; */
+}
+#primedeals #box2 .items span{
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+}
+
+/* Blockbuster delas */
+section #blockbusters{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    /* height: 200px; */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dbdbdb;
+    border: 2px solid #dbdbdb;
+    padding: 14px 0px;
+}
+#blockbusters #box1{
+    display: flex;
+    width: 96%;
+    margin-bottom: 14px;
+    align-items: center;
+}
+#blockbusters #box1 h1{
+    font-family: 'DynaPuff', cursive;
+    text-shadow: 2px 2px grey;
+    font-size: 30px;
+    margin-right: 10px;
+}
+#blockbusters #box1 a{
+    text-decoration: none;
+    color: blue;
+}
+#blockbusters #box1 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+#blockbusters #box2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+}
+#blockbusters #box2 .items{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 240px;
+    align-items: center;
+}
+#blockbusters #box2 .items a{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 40px;
+}
+#blockbusters #box2 .items img{
+    width: 180px;
+    /* padding: 5px; */
+}
+#blockbusters #box2 .items img:hover{
+    transform: translateY(-7px);
+    transition-duration: 1.5s;
+    /* cursor: pointer; */
+}
+#blockbusters #box2 .items span{
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: blue;
+}
+
+/* Upto off */
+section #uptooff{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dbdbdb;
+    border: 2px solid #dbdbdb;
+    width: 100%;
+}
+#uptooff img{
+    width: 180px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+#uptooff .boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 10px 0px;
+}
+#uptooff #box1 h1{
+    font-family: 'DynaPuff', cursive;
+    text-shadow: 2px 2px grey;
+    font-size: 30px;
+}
+#uptooff .boxes .items{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid white; */
+    background-color: white;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    /* height: 150px; */
+}
+#uptooff .boxes img,
+#uptooff .boxes div,
+#uptooff .boxes span{
+    margin-bottom: 10px;
+}
+#uptooff .items .price{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 180px;
+    height: fit-content;
+}
+#uptooff .items .price .productname{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#uptooff .items .price .rating{
+    display: flex;
+    background-color: green;
+    /* color: white; */
+    justify-content: space-between;
+    align-items: center;
+    width: 46px;
+    /* height: 26px; */
+    padding: 2px;
+    border-radius: 6px;
+}
+#uptooff .items .price .rating span{
+    color: white;
+    width: 25px;
+    margin: 0px 2px;
+}
+#uptooff .boxes .rupees{
+    background-color: red;
+    padding: 4px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+#uptooff .boxes .rupees:hover{
+    cursor: pointer;
+    background-color: rgb(192, 23, 23);
+    color: whitesmoke;
+}
+#uptooff .boxes .tag{
+        position: relative;
+        background-color: blue;
+        color: white;
+        width: 180px;
+        text-align: center;
+        z-index: 10;
+}
+/* Section ends */
+
+/* Footer starts */
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer #box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    padding: 20px 0px;
+}
+footer .boxes .items{
+    margin: 0px 20px;
+}
+footer .boxes #item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .boxes #item1 img{
+    width: 30px;
+    margin: 2px 10px;
+}
+footer .boxes #item1 img:hover{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+footer #box1 #item2 select{
+    color: white;
+    border: 2px solid white;
+    background-color: #35363a;
+    display: flex;
+    border-radius: 4px;
+    width: 95px;
+}
+footer #box2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #878789;
+    width: 100%;
+}
+footer #box2 .items{
+    margin: 22px 0px;
+}
+footer #box2 .items a{
+    text-decoration: none;
+    color: #878789;
+}
+footer #box2 .items a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+footer #box2 #item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer #box2 #item1 .about{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0px 20px;
+}
+footer #box2 #item2{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #19276896;
+    border: 2px solid #0f173d;
+    border-radius: 20px;
+    padding: 2px 14px;
+}

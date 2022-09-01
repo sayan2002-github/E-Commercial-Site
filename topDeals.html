@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Top Deals Today in ClickShop, A Online Shopping Portal</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        width: 98%;
+        background-color: black;
+        color: white;
+        text-shadow: 2px 2px grey;
+        font-family: 'DynaPuff', cursive;
+        padding: 10px 15px;
+    }
+
+    section {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border: 2px solid black;
+        /* margin-bottom: 30px; */
+    }
+
+    section .boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    section .boxes .items {
+        background-color: rgb(218, 216, 216);
+        border: 1px solid white;
+        width: 222px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section .boxes img {
+        width: 180px;
+    }
+
+    section .boxes img:hover {
+        cursor: pointer;
+        transform: translateY(-7px);
+        transition-duration: 1s;
+    }
+
+    .rating {
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rating p {
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .rating span {
+        color: orange;
+        width: 12px;
+        /* height: 10px; */
+        margin: 0px 2px;
+        position: relative;
+        top: auto;
+    }
+    footer{
+        background-color: #333333;
+        width: 100%;
+        border-bottom: 2px solid #333333;
+        border-left: 2px solid #333333;
+        border-right: 2px solid #333333;
+    }
+    footer .footline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footline h3{
+        color: white;
+        margin-right: 5px;
+    }
+    footer .footline span{
+        border: 2px solid white;
+        background-color: grey;
+        margin: 25px 5px;
+        padding: 2px;
+    }
+    footer .footline span:hover{
+        color: white;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Top Deals Today in clickShop **</h1>
+    </header>
+    <section>
+        <div class="boxes" id="box1">
+            <div class="items" id="item1">
+                <img src="./images/topdeals1.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item2">
+                <img src="./images/topdeals2.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item3">
+                <img src="./images/topdeals3.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item4">
+                <img src="./images/topdeals4.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item5">
+                <img src="./images/topdeals5.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item6">
+                <img src="./images/topdeals6.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+        </div>
+        <div class="boxes" id="box2">
+            <div class="items" id="item1">
+                <img src="./images/topdeals7.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item2">
+                <img src="./images/topdeals8.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item3">
+                <img src="./images/topdeals9.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item4">
+                <img src="./images/topdeals10.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item5">
+                <img src="./images/topdeals11.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item6">
+                <img src="./images/topdeals12.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+        </div>
+        <div class="boxes" id="box3">
+            <div class="items" id="item1">
+                <img src="./images/topdeals13.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item2">
+                <img src="./images/topdeals14.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item3">
+                <img src="./images/topdeals15.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item4">
+                <img src="./images/topdeals16.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item5">
+                <img src="./images/topdeals17.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item6">
+                <img src="./images/topdeals18.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+        </div>
+        <div class="boxes" id="box4">
+            <div class="items" id="item1">
+                <img src="./images/topdeals19.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item2">
+                <img src="./images/topdeals20.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item3">
+                <img src="./images/topdeals21.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item4">
+                <img src="./images/topdeals22.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item5">
+                <img src="./images/topdeals23.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item6">
+                <img src="./images/topdeals24.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+        </div>
+        <div class="boxes" id="box5">
+            <div class="items" id="item1">
+                <img src="./images/topdeals25.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item2">
+                <img src="./images/topdeals26.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item3">
+                <img src="./images/topdeals27.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item4">
+                <img src="./images/topdeals28.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item5">
+                <img src="./images/topdeals29.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+            <div class="items" id="item6">
+                <img src="./images/topdeals30.png" alt="Error Loading">
+                <div class="rating">
+                    <p>Ratings: </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footline">
+            <h3>Pages : </h3>
+            <span>01</span>
+            <span>02</span>
+            <span>03</span>
+            <span>04</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+            <span>70</span>
+            <span>Next</span>
+        </div>
+    </footer>
+</body>
+
+</html>
