@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+header #menubar #bar1 a{
+    font-size: 7px;
+}
+
+#topdeals #box2 .items{
+    height: 200px;
+}
+#primedeals #box2 .items{
+    height: 200px;
+}
+#blockbusters #box2 .items{
+    height: 200px;
+}
+
+#topdeals #box2 .items img{
+    width: 150px;
+    /* padding: 5px; */
+}
+#primedeals #box2 .items img{
+    width: 150px;
+    /* padding: 5px; */
+}
+#blockbusters #box2 .items img{
+    width: 150px;
+    /* padding: 5px; */
+}
+
+#primedeals #box2 .items span{
+    width: 150px;
+    font-size: 7px;
+}
+
+#uptooff img{
+    width: 150px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+
+#uptooff .boxes .items{
+    width: 150px;
+}
+
+#uptooff .items .price,
+#uptooff .items .tag{
+    width: 150px;
+}
+#uptooff .items .rupees{
+    /* width: 120px; */
+    font-size: 10px;
+}

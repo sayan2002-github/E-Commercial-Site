@@ -6,10 +6,8 @@
 body{
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    justify-content: center;
     scroll-behavior: smooth;
-    /* align-items: center; */
-    /* height: 2000px; */
 }
 /* Header starts */
 
@@ -475,7 +473,7 @@ section #uptooff{
 footer{
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 footer #box1{
